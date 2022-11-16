@@ -5,7 +5,7 @@ import reportDEV
 
 app = FastAPI()
 
-ip = "34.125.179.111"
+ip = reportDEV.getIPreport()
 cpu = reportDEV.getCPUreport()
 ram = reportDEV.getRAMreport()
 disk = reportDEV.getDISKreport()
