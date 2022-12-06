@@ -5,7 +5,7 @@ linux_command_IP = "curl ifconfig.me"
 # mpstat idle
 linux_command_CPU = "mpstat |tail -1 | awk '{print 100-$NF}'"
 #free -h free memory 
-linux_command_RAM = "free -h |awk '{if($1 ==\"Mem:\") print($4)}'"
+linux_command_RAM = "free -h |awk '{if($1 ==\"Mem:\") print($3/$2)}'"
 linux_command_DISK = "df |sed -n '2,$p' |awk '{if($3/$2>=0.7) print $0}'"
 
 
