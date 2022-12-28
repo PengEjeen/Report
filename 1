@@ -17,5 +17,5 @@ inner_ip = os.popen("hostname -I").read()
 
 if __name__ == "__main__": 
     port = str(input("insert port: "))
-    run = "sudo uvicorn send_api:app --reload --host=" + inner_ip + "--port=" + port
-    os.system(run.replace("\n",""))
+    run = "sudo uvicorn send_api:app --reload --host=" + inner_ip + " --port=" + port
+    os.system(run)

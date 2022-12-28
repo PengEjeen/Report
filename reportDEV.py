@@ -1,5 +1,4 @@
 import os
-import sys
 
 linux_command_IP = "curl ifconfig.me"
 # mpstat idle
